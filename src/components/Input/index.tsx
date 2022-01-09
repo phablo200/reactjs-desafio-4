@@ -2,14 +2,20 @@ import {
   useEffect,
   useRef,
   useState,
-  useCallback,
+  useCallback
 } from 'react';
 
 import { useField } from '@unform/core';
 
 import { Container } from './styles';
 
-const Input = ({ name, icon: Icon, ...rest }) => {
+type Props = {
+  name: string;
+  icon?: any;
+  placeholder?: string;
+};
+
+const Input = ({ name, icon: Icon, ...rest }: Props) => {
   const inputRef = useRef(null);
 
   const [isFocused, setIsFocused] = useState(false);

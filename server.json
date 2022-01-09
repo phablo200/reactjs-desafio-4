@@ -31,6 +31,22 @@
       "description": "Teste",
       "available": true,
       "id": 4
+    },
+    {
+      "image": "outroteste.com",
+      "name": "outro teste",
+      "price": "28",
+      "description": "outro teste",
+      "available": true,
+      "id": 5
+    },
+    {
+      "image": "outroteste2.com",
+      "name": "outro teste2",
+      "price": "20",
+      "description": "outro teste2",
+      "available": true,
+      "id": 6
     }
   ]
 }
