@@ -8,7 +8,10 @@ import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
 
 
+
+
 export default function Dashboard () {
+
   const [foods, setFoods] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
   const [editingFood, setEditingFood] = useState({});
@@ -92,8 +95,8 @@ export default function Dashboard () {
             <Food
               key={food.id}
               food={food}
-              handleDelete={handleDeleteFood}
-              handleEditFood={handleEditFood}
+              handleDelete={() => handleDeleteFood(food.id)}
+              handleEditFood={() => handleEditFood(food)}
             />
           ))}
       </FoodsContainer>
